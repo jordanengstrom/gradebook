@@ -3,8 +3,14 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
+    public class NamedObject
+        {
+            public string Name
+            { get; set; }
+        }
     public class Book
     {
+
         private List<double> grades = new List<double>();
         private string name;
         public Book(string name)
