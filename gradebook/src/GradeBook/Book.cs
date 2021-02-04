@@ -2,18 +2,21 @@ using System;
 using System.Collections.Generic;
 
 namespace GradeBook
-{
+{    
     public class NamedObject
-        {
-            public string Name
-            { get; set; }
-        }
-    public class Book
     {
-
+        public NamedObject(string name)
+        {
+            Name = name;
+        }
+        public string Name
+            { get; set; }
+    };
+    public class Book : NamedObject
+    {
         private List<double> grades = new List<double>();
         private string name;
-        public Book(string name)
+        public Book(string name) :  base("")
         {
             this.name = name;
         }
