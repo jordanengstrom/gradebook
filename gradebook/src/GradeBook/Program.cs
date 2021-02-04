@@ -33,7 +33,7 @@ namespace GradeBook
                     }
                     catch (ArgumentException ex)
                     {
-                        Console.WriteLine(ex);
+                        Console.WriteLine(ex.Message);
                     }
                 }
             }
