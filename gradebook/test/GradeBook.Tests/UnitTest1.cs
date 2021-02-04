@@ -8,10 +8,15 @@ namespace GradeBook.Tests
         [Fact]
         public void Test1()
         {
+            // arrange
             int x = 5;
             int y = 2;
             int expected = 10;
+
+            // act
             int actual = x * y;
+
+            // assert
             Assert.Equal(expected, actual);
         }
     }
