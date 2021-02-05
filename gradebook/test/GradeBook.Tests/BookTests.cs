@@ -9,7 +9,7 @@ namespace GradeBook.Tests
         public void Test1()
         {
             // arrange
-            GradeBook book = new Book   
+            var book = new Book("");
 
             // assert
             Assert.Equal(expected, actual);
