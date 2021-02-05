@@ -12,6 +12,7 @@ namespace GradeBook
         public string Name
             { get; set; }
     };
+
     public class Book : NamedObject
     {
         private List<double> grades = new List<double>();
@@ -26,7 +27,7 @@ namespace GradeBook
             this.grades.Add(grade);
         }
 
-        public void ShowStatistics()
+        public double ShowStatistics()
         {
             double result = 0.0;
             double highGrade = double.MinValue;
@@ -45,6 +46,7 @@ namespace GradeBook
             Console.WriteLine($"The highest grade is {highGrade}");
             Console.WriteLine($"The average grade is {result:N1}");
 
+            return result;
         }
     }
 }
